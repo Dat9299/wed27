@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-size: cover;
+  position: relative;
+}
+
+.d-flex {
+  display: flex;
+}
+
+body:before {
+  position: absolute;
+  background: white;
+  width: 100%;
+  height: 100%;
+  top: -70px;
+}
+
+form {
+  width: 425px;
+  height: 500px;
+  margin-left: 35%;
+  margin-top: 5%;
+  box-shadow: 0px 5px 8px 3px #aaa;
+  background: white;
+  position: relative;
+}
+
+.first-title {
+  font-size: 32px;
+  padding: 10px 10px 0px 10px;
+}
+
+.sub-title {
+  color: #606770;
+  margin-left: 10px;
+  font-size: 15px;
+}
+
+hr {
+  margin-top: 10px;
+  opacity: 20%;
+}
+
+.sub-title-2 {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+select {
+  width: 125px;
+  margin-left: 10px;
+  margin-top: 10px;
+  height: 35px;
+  font-size: 15px;
+  background: none;
+  border: 1px solid #aaa;
+}
+
+.sub-title-3 {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.sub-title-4 {
+  margin-left: 10px;
+  font-size: 10px;
+  color: #606770;
+}
+
+.sub-title-4 a {
+  text-decoration: none;
+  color: blue;
+  display: flex;
+}
+
+.submit {
+  width: 200px;
+  height: 40px;
+  background: #0ebd02;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+  margin-left: 25%;
+  margin-top: 20px;
+}
+
+.row {
+  display: flex;
+}
+
+.col-1 {
+  width: 8.333333%;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+}
+
+.col-2 {
+  width: 16.666667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.333333%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.col-5 {
+  width: 41.666667%;
+}
+.col-6 {
+  width: 50%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.col-7 {
+  width: 58, 333333%;
+}
+
+.col-8 {
+  width: 66.666667%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.col-9 {
+  width: 75%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.col-10 {
+  width: 83.333333%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.col-11 {
+  width: 91.666667%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.col-12 {
+  width: 100%;
+}
+
+.male,
+.female,
+.Other {
+  display: flex;
+
+  justify-content: center;
+}

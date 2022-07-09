@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position</title>
+    <style>
+      /* <!-- fixed: Căn theo khung trình duyệt () và cố định tại ví trị đó, bất kể cuộn lên/xuống --> */
+      /* Vị trí gốc/kích thước ban đầu ko tồn tại, các phần tử xung quanh cũng lấp vị trí trống */
+      /* Có thể áp dụng được top/left/right/bottom (không có width/height) */
+      .fixed {
+        position: fixed;
+      }
+
+      .absolute {
+        position: absolute;
+      }
+
+      .right-30 {
+        right: 30px;
+      }
+
+      .bottom-30 {
+        bottom: 30px;
+      }
+
+      .right-50 {
+        right: 50px;
+      }
+
+      .bottom-120 {
+        bottom: 120px;
+      }
+
+      .call,
+      .back-to-top {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .call {
+        background: rebeccapurple;
+      }
+
+      .back-to-top {
+        background: green;
+      }
+
+      /* khi .call có trạng thái hover thì áp dụng css cho .text */
+      .call:hover .text,
+      .back-to-top:hover .text {
+        display: block;
+      }
+
+      .icon {
+        font-size: 30px;
+      }
+      .text {
+        white-space: nowrap;
+        color: white;
+        padding: 10px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        padding-right: 20px;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="call fixed right-30 bottom-120">
+      <div class="icon">📞</div>
+      <div class="text absolute right-50">0987654321</div>
+    </div>
+
+    <div class="back-to-top fixed right-30 bottom-30">
+      <div class="icon">⏫</div>
+      <div class="text absolute right-50">Back to top</div>
+    </div>
+  </body>
+</html>

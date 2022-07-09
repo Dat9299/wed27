@@ -1,0 +1,78 @@
+.text-bisque {
+    color: #e62618;
+}
+
+.text-brown {
+    color: #A52A2A;
+}
+
+.text-DarkCyan { 
+    color: #008B8B;
+}
+.text-DarkTurquoise { 
+color: #00CED1;
+}
+.text-GoldenRod {
+    color: #DAA520;
+}
+
+.text-left {
+    text-align: left
+}
+.text-center {
+    text-align: center
+}
+.text-right {
+    text-align: right
+}
+.text-justify {
+   text-align: justify
+}
+.vertical-middle {
+    vertical-align: middle
+}
+.vertical-top {
+    vertical-align: top
+}
+
+.decoration-overline {
+    text-decoration-line: overline;
+}
+.decoration-line-through { 
+    text-decoration-line: line-through;
+}
+.decoration-underline {
+    text-decoration-line: underline;
+}
+.decoration-line {
+  text-decoration-line: overline underline;
+}
+
+p.uppercase {
+    text-transform: uppercase;
+}
+p.lowercase {
+    text-transform: lowercase;
+}
+p.capitalize {
+    text-transform: capitalize;
+}
+p {
+  text-indent: 50px;
+}
+/* example */
+h1 {
+  letter-spacing: 5px;
+}
+
+h2 {
+  letter-spacing: -2px;
+}
+/* Line Height */
+p.small {
+  line-height: 0.8;
+}
+p.big {
+  line-height: 1.8;
+}
+

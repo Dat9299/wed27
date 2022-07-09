@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      type="text/javascript"
+      src="https://codesandbox.io/public/sse-hooks/sse-hooks.f648b14c15c640a14a557113a991cb8d.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://codesandbox.io/static/js/banner.be879265d.js"
+    ></script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      .app {
+        width: 100ww;
+        height: 100%;
+      }
+
+      .content {
+        width: 100%;
+        padding: 20px;
+      }
+
+      img {
+        width: 100%;
+        display: block;
+      }
+
+      .paragraph {
+        padding: 20px;
+        text-align: center;
+      }
+
+      .detail {
+        margin: 20px 30px;
+        padding: 15px;
+        border: 1px solid #999999;
+        background: #e6e6fa;
+        max-width: 100%;
+      }
+
+      .detail p {
+        font-size: 16px;
+        color: #333;
+        margin: 0 0 15px;
+      }
+
+      h1 {
+        font-size: 36px;
+        line-height: 50px;
+        font-weight: 600;
+        color: #222;
+        font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+          "Helvetica Neue", "Arial", "Apple Color Emoji", "Segoe UI Emoji",
+          "Segoe UI Symbol", sans-serif;
+      }
+
+      a > p {
+        margin: 32px 0 0;
+        font-size: 18px;
+        line-height: 30px;
+        color: #333;
+        font-style: italic;
+        font-family: "Noto Serif", -apple-system, BlinkMacSystemFont, "Segoe UI",
+          "Helvetica Neue", "Arial", "Apple Color Emoji", "Segoe UI Emoji",
+          "Segoe UI Symbol", serif;
+        font-weight: 400;
+      }
+
+      .app {
+        display: flex;
+      }
+
+      .content-left {
+        width: 70%;
+      }
+      .content-right {
+        width: 30%;
+      }
+
+      h3 {
+        font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+          "Helvetica Neue", "Arial", "Apple Color Emoji", "Segoe UI Emoji",
+          "Segoe UI Symbol", sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: #25282b;
+      }
+
+      ol {
+        padding-left: 20px;
+      }
+
+      li {
+        padding-top: 10px;
+        border-top: 1px solid #ccc;
+        padding-left: 15px;
+        margin-top: 10px;
+      }
+
+      li a {
+        text-decoration: none;
+        display: flex;
+        color: #222;
+      }
+
+      li a:hover {
+        color: lightblue;
+      }
+
+      li a span {
+        max-width: 60%;
+        text-decoration: none;
+      }
+
+      li a img {
+        max-height: 100px;
+        object-fit: cover;
+        max-width: 40%;
+        height: 100%;
+        width: 100%;
+        flex: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <div class="content-left">
+        <h1>Sau 11 năm, dự án 21 nghìn tỷ đồng chỉ có... cổng, tường rào</h1>
+        <p>
+          (Dân trí) - Suốt hơn một thập kỷ từ khi được cấp giấy đăng ký đầu tư,
+          dự án nhà máy nhiệt điện hơn 21 nghìn tỷ đồng tại Thanh Hóa mới xây
+          dựng được cổng chính và hệ thống tường rào.
+        </p>
+
+        <div class="content">
+          <img
+            src="https://icdn.dantri.com.vn/thumb_w/770/2022/06/09/du-an-nha-may-nhiet-dien-21-nghin-ty-thanh-noi-chan-tha-bo-1-1654742284731.jpeg"
+            alt=""
+          />
+          <p class="paragraph">
+            Dự án Nhà máy Nhiệt điện Công Thanh tại Khu kinh tế Nghi Sơn (thị xã
+            Nghi Sơn, Thanh Hóa) do Công ty Cổ phần Công Thanh làm chủ đầu tư
+            với tổng mức đầu tư 21.691 tỷ đồng (20% vốn chủ đầu tư, 80% vốn vay
+            tín dụng nước ngoài do nhà nước bảo lãnh). Dự án này được cấp giấy
+            chứng nhận đăng ký đầu tư vào tháng 11/2010 và khởi công vào tháng
+            3/2011.
+          </p>
+        </div>
+
+        <div class="content">
+          <img
+            src="https://icdn.dantri.com.vn/thumb_w/770/2022/06/09/3-1654737448666.jpeg"
+            alt=""
+          />
+          <p class="paragraph">
+            Dự án Nhà máy Nhiệt điện Công Thanh tại Khu kinh tế Nghi Sơn (thị xã
+            Nghi Sơn, Thanh Hóa) do Công ty Cổ phần Công Thanh làm chủ đầu tư
+            với tổng mức đầu tư 21.691 tỷ đồng (20% vốn chủ đầu tư, 80% vốn vay
+            tín dụng nước ngoài do nhà nước bảo lãnh). Dự án này được cấp giấy
+            chứng nhận đăng ký đầu tư vào tháng 11/2010 và khởi công vào tháng
+            3/2011.
+          </p>
+        </div>
+
+        <div class="content">
+          <img
+            src="https://icdn.dantri.com.vn/thumb_w/770/2022/06/09/du-an-nha-may-nhiet-dien-21-nghin-ty-thanh-noi-chan-tha-bo-1-1654742284731.jpeg"
+            alt=""
+          />
+          <p class="paragraph">
+            Dự án được đầu tư theo 2 giai đoạn, kế hoạch đến đầu năm 2014 sẽ đưa
+            vào vận hành tổ máy số 1, quý 3/2014 hoàn thành toàn bộ nhà máy.
+            Trong hình là phối cảnh của dự án tại khu vực triển khai.
+          </p>
+        </div>
+
+        <div class="content">
+          <img
+            src="https://icdn.dantri.com.vn/thumb_w/770/2022/06/09/4-1654737504028.jpeg"
+            alt=""
+          />
+          <p class="paragraph">
+            Nhưng đến nay, sau hơn 10 năm, chủ đầu tư mới hoàn thành san lấp
+            phần mặt bằng chính với diện tích hơn 61ha.
+          </p>
+        </div>
+
+        <div class="content">
+          <img
+            src="https://icdn.dantri.com.vn/thumb_w/770/2022/06/09/5-1654737544035.jpeg"
+            alt=""
+          />
+          <p class="paragraph">
+            Theo cổng thông tin điện tử Tỉnh ủy Thanh Hóa, dự án được điều chỉnh
+            lần 2 ngày 5/6/2018, với tiến độ thực hiện, thời gian hoàn thiện các
+            hồ sơ, thủ tục và khởi công xây dựng nhà máy trong năm 2018. Thời
+            gian đưa nhà máy vào vận hành tin cậy tháng 11/2020 và đưa vào vận
+            hành thương mại tháng 12/2020. Song, sau lần điều chỉnh đó, dự án
+            mới xây dựng được cổng chính, còn lại chỉ là bãi đất trống.
+          </p>
+        </div>
+
+        <div class="content">
+          <img
+            src="https://icdn.dantri.com.vn/thumb_w/770/2022/06/09/6-1654737597601.jpeg"
+            alt=""
+          />
+          <p class="paragraph">
+            Chủ đầu tư cũng triển khai xây dựng khoảng 1.000m tường rào bảo vệ
+            khuôn viên dự án.
+          </p>
+        </div>
+
+        <div class="content">
+          <img
+            src="https://icdn.dantri.com.vn/thumb_w/770/2022/06/09/7-1654737659463.jpeg"
+            alt=""
+          />
+          <p class="paragraph">
+            Tại mặt bằng dự án cỏ mọc um tùm, người dân địa phương đưa trâu, bò
+            vào chăn thả.
+          </p>
+        </div>
+
+        <div class="content">
+          <img
+            src="https://icdn.dantri.com.vn/thumb_w/770/2022/06/09/8-1654737798398.jpeg"
+            alt=""
+          />
+          <p class="paragraph">
+            Chiếc thùng container đặt trong khuôn viên dự án.
+          </p>
+        </div>
+
+        <div class="content">
+          <img
+            src="https://icdn.dantri.com.vn/thumb_w/770/2022/06/09/10-1654737866532.jpeg"
+            alt=""
+          />
+          <p class="paragraph">
+            Theo ông Nguyễn Tiến Hiệu, Trưởng Ban quản lý Khu kinh tế Nghi Sơn
+            và các Khu công nghiệp tỉnh Thanh Hóa, hiện đang báo cáo Bộ Công
+            Thương, Thủ tướng Chính phủ để điều chuyển dự án nhà máy nhiệt điện
+            này thành dự án điện khí, không dùng nhiệt than. "Chủ tịch UBND tỉnh
+            đã có văn bản báo cáo Bộ Công Thương", ông Nguyễn Tiến Hiệu cho
+            biết.
+          </p>
+        </div>
+
+        <div class="detail">
+          <p>
+            Ngày 18/3, UBND tỉnh Thanh Hóa có công văn giao tham mưu giải quyết
+            đề nghị điều chỉnh, bổ sung quy hoạch cảng biển và quy hoạch điện
+            VIII, dự án Nhà máy Nhiệt điện Công Thanh.
+          </p>
+          <p>
+            Trước đó, ngày 7/3, UBND tỉnh Thanh Hóa nhận được công văn của Công
+            ty Cổ phần Nhiệt điện Công Thanh đề nghị điều chỉnh, bổ sung quy
+            hoạch cảng biển và quy hoạch điện VIII, dự án Nhà máy Nhiệt điện
+            Công Thanh.
+          </p>
+          <p>
+            Trước đó, ngày 7/3, UBND tỉnh Thanh Hóa nhận được công văn của Công
+            ty Cổ phần Nhiệt điện Công Thanh đề nghị điều chỉnh, bổ sung quy
+            hoạch cảng biển và quy hoạch điện VIII, dự án Nhà máy Nhiệt điện
+            Công Thanh.
+          </p>
+          <p>
+            Đối với đề nghị chấp thuận vị trí cảng nhập LNG của dự án nhiệt điện
+            khí Công Thanh tại khu vực đảo Hòn Mê và có văn bản đề nghị Bộ Giao
+            thông vận tải chấp thuận bổ sung vào quy hoạch chi tiết cảng biển
+            Thanh Hóa. Giao Sở Giao thông vận tải chủ trì, phối hợp với Ban Quản
+            lý Khu kinh tế Nghi Sơn và các Khu công nghiệp, UBND thị xã Nghi Sơn
+            và các ngành, đơn vị liên quan nghiên cứu, có ý kiến đề xuất, báo
+            cáo Chủ tịch UBND tỉnh.
+          </p>
+        </div>
+      </div>
+      <div class="content-right">
+        <h3>Đọc nhiều trong Xã hội</h3>
+        <img
+          src="https://icdn.dantri.com.vn/zoom/300_200/2022/06/09/chu-ngoc-anh2-1654598109359-1654735615858.jpg"
+          alt=""
+        />
+        <ol type="1">
+          <li>
+            <a href=""
+              ><span>
+                Ông Chu Ngọc Anh ký bổ nhiệm 6 lãnh đạo sở, ngành trước khi bị
+                bắt
+              </span>
+            </a>
+          </li>
+
+          <li>
+            <a href=""
+              ><span
+                >Việt Nam lên tiếng việc máy bay Australia bị quấy rối ở Hoàng
+                Sa</span
+              >
+              <img
+                src="https://icdn.dantri.com.vn/zoom/90_60/2022/06/07/cuong-che-pha-rungdak-nong-2022duong-phong-2-1654581365471-1654610270376.jpg"
+                alt=""
+              />
+            </a>
+          </li>
+
+          <li>
+            <a href=""
+              ><span
+                >Phá dỡ tài sản trái phép trên đất dự án của vợ nguyên PGĐ Công
+                an tỉnh</span
+              >
+              <img
+                src="https://icdn.dantri.com.vn/zoom/90_60/2022/06/09/2818720047229816789125196836712529684369146n-crop-1654765632387.jpeg"
+                alt=""
+              />
+            </a>
+          </li>
+
+          <li>
+            <a href=""
+              ><span
+                >Thực hư thông tin ông Lê Tùng Vân lên TPHCM làm căn cước công
+                dân</span
+              >
+              <img
+                src="https://icdn.dantri.com.vn/zoom/90_60/2022/06/09/z3480014618009415f9399e5a9069126da6ffe343e3320-1654779408302.jpeg"
+                alt=""
+              />
+            </a>
+          </li>
+
+          <li>
+            <a href=""
+              ><span>
+                Xác minh hình ảnh bé gái 4 tuổi bị đánh tại khu vui chơi ở Hà
+                Nội
+              </span>
+              <img
+                src="https://icdn.dantri.com.vn/zoom/90_60/2022/06/09/2841887914818917870701999050355366191007841n-1654746297868.gif"
+                alt=""
+              />
+            </a>
+          </li>
+        </ol>
+      </div>
+    </div>
+    <script
+      crossorigin
+      type="text/javascript"
+      src="https://codesandbox.io/static/js/watermark-button.be960f43b.js"
+    ></script>
+  </body>
+</html>

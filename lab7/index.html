@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+      }
+
+      .static {
+        background-color: greenyellow;
+      }
+
+      .relative {
+        background-color: red;
+
+        position: relative;
+
+        left: 150px;
+
+        bottom: 50px;
+
+        z-index: 1;
+
+        /* Chỉ áp dụng được 2/4 thuộc tình top/left/right/bottom */
+        /* Thường relative chỉ sử dụng tạo mốc cho những phần tử khác (absolute) căn theo */
+      }
+
+      /* .small-box {
+        width: 100px;
+        height: 50px;
+      } */
+
+      .absolute {
+        background-color: aquamarine;
+        position: absolute;
+        /* Kích thước/vị trí ban đầu không còn tồn tại, các phần tử xung quang sẽ tự động sắp xếp lại để lấp khoảng trống */
+        /* Kích thước tự động co lại chỉ vừa với nội dung */
+        /* Absolute cho phép mình đặt cả 4 thuộc tính top/left/right/bottom (chỉ có tác dụng khi mà không có width, height) */
+        bottom: 0;
+        right: 0;
+        /* Căn theo thằng cha gần nhất có position khác relative */
+        left: 0;
+        top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="box relative"></div>
+
+    <div class="box relative">
+      <div class="small-box static">Static</div>
+      <div class="small-box absolute">Absolute</div>
+      <div class="small-box static">Static</div>
+    </div>
+
+    <div class="box static"></div> -->
+
+    <div class="box-square relative">
+      <div class="box-cirle absotule top-0 right-50"></div>
+      <div class="box-cirle absotule left-0 bottom-0"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.container {
+  width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.col-1 {
+  width: 8.333333%;
+}
+
+.col-2 {
+  width: 16.666667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.333333%;
+}
+
+.col-5 {
+  width: 41.666667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.333333%;
+}
+
+.col-8 {
+  width: 66.666667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.333333%;
+}
+
+.col-11 {
+  width: 91.666667%;
+}
+.col-12 {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  /* Bù lại lại phần khoảng trống ở 2 cột ngoài cùng bên trái và bên phải */
+  margin-left: -5px;
+  margin-right: -5px;
+  /* Bù lại phần khoảng trống của dòng trên cùng */
+  margin-top: -10px;
+}
+
+/* row -> column */
+.row > * {
+  /* Tạo khoảng trống giữa mỗi cột */
+  padding-left: 5px;
+  padding-right: 5px;
+  /* Tạo khoảng trống giữa mỗi hàng */
+  margin-top: 10px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.f-column {
+  flex-direction: column;
+}
+
+.j-center {
+  justify-content: center;
+}
+
+.j-end {
+  justify-content: flex-end;
+}
+
+.j-between {
+  justify-content: space-between;
+}
+
+.a-center {
+  align-items: center;
+}
+
+.filter-item {
+  flex-grow: 1;
+  text-align: center;
+}
+.f-input {
+  width: 100%;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+}
+.link {
+  display: flex;
+  justify-content: flex-end;
+}
+.link a {
+  margin-left: 20px;
+}
+
+ul {
+  list-style-type: none !important;
+}
+
+footer {
+  display: flex;
+  
+}
